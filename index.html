@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C56 Wallpaper - Your Privacy Matters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* A fresh green, consistent with C56 */
+            --secondary-color: #333;
+            --light-bg: #f5f8fa;
+            --white: #ffffff;
+            --text-color: #4a4a4a;
+            --light-text: #777;
+            --border-color: #e0e0e0;
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --transition-speed: 0.3s ease;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        .header-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+            animation: background-animate 15s infinite linear;
+            opacity: 0.5;
+        }
+
+        @keyframes background-animate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .header-section h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-section p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -60px auto 40px auto; /* Pulls container up over header */
+            padding: 30px 40px;
+            background-color: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            position: relative;
+            z-index: 2; /* Ensures container is above header elements */
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: var(--secondary-color);
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            font-weight: 600;
+        }
+
+        h2::before {
+            content: '✨'; /* Add a little sparkle to headings */
+            margin-right: 10px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        ul li::before {
+            content: '✅'; /* Custom checkmark for list items */
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+
+        strong {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid var(--border-color);
+            text-align: center;
+        }
+
+        .contact-info h2::before {
+             content: '📧'; /* Envelope icon for contact */
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color var(--transition-speed);
+        }
+
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+
+        .last-updated {
+            text-align: right;
+            font-size: 0.9em;
+            color: var(--light-text);
+            margin-top: 25px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--light-text);
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .header-section {
+                padding: 30px 15px;
+            }
+            .header-section h1 {
+                font-size: 2em;
+            }
+            .header-section p {
+                font-size: 1em;
+            }
+            .container {
+                margin: -40px 15px 30px 15px;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p, ul li {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>Your Privacy Matters to C56 Wallpaper!</h1>
+        <p>We're dedicated to being transparent about how we handle your data. Here’s everything you need to know.</p>
+    </div>
+
+    <div class="container">
+        <p class="last-updated">Last Updated: July 25, 2025</p>
+
+        <p>At C56 Wallpaper, we deeply respect your privacy. This policy clearly outlines what information we collect, why we collect it, how we use it, and how we keep it safe. By using our C56 Wallpaper app, you're agreeing to the practices described in this policy, designed to enhance your experience while safeguarding your trust.</p>
+
+        <h2>What Information Do We Collect?</h2>
+        <p>We focus on collecting only the essential information to make your wallpaper experience amazing:</p>
+        <ul>
+            <li><strong>App Usage Data:</strong> We track how you interact with the app. This includes which stunning wallpapers you browse, which ones you choose to download or set, and how you navigate through the app. This helps us understand what you love, so we can bring you more of it!</li>
+            <li><strong>Device Information:</strong> We collect basic details about your device, like its type (e.g., iPhone, Samsung Galaxy), operating system version (e.g., iOS 18, Android 15), and a unique identifier for your device. This isn't about *you*, but about making sure the app runs smoothly and looks fantastic on *your specific device*.</li>
+            <li><strong>Permissions You Grant:</strong> To let you save your favorite wallpapers or set them as your background, we'll ask for specific permissions like "Storage" or "Photos/Media." **Rest assured, these permissions are solely for enabling these features.** We never snoop around your personal files or collect anything beyond what's necessary for the app to function beautifully.</li>
+        </ul>
+
+        <h2>How Do We Use This Information?</h2>
+        <p>Every piece of data we collect has a purpose: to make your C56 Wallpaper experience better!</p>
+        <ul>
+            <li>To **keep the C56 Wallpaper app running flawlessly** and deliver beautiful content to you.</li>
+            <li>To **constantly improve our app and services**, adding new features and fixing any glitches.</li>
+            <li>To **personalize your experience** by recommending wallpapers you'll truly love, based on your viewing habits.</li>
+            <li>To **diagnose and fix any technical issues** you might encounter, ensuring a smooth experience.</li>
+            <li>To **understand overall usage trends**, which helps us prioritize what new wallpapers and features to develop next.</li>
+        </ul>
+
+        <h2>Your Data Security is Our Priority</h2>
+        <p>We take the security of your information seriously. We implement robust security measures to protect your data from unauthorized access, accidental loss, alteration, disclosure, or destruction. We're committed to keeping your information safe and sound.</p>
+
+        <h2>Sharing Data? Only When It Makes Sense, Anonymously.</h2>
+        <p>We want to be crystal clear: **we will absolutely NOT sell, trade, or rent your personal information to third parties for advertising or any other commercial purposes.**</p>
+        <p>Sometimes, we work with trusted third-party service providers (like Google Analytics, for example) to help us understand how the app is being used. When we do this, we only share **aggregated, non-identifiable information**. This means the data is combined and anonymized, so it can't be traced back to you personally. It's simply to help us analyze overall app performance and usage patterns.</p>
+
+        <h2>Updates to This Policy</h2>
+        <p>The digital world evolves, and so might our privacy practices. We may update this Privacy Policy from time to time. When we make changes, we'll update the "Last Updated" date at the top of this page and post the new policy here. We encourage you to review this policy periodically to stay informed.</p>
+
+        <div class="contact-info">
+            <h2>Got Questions? We're Here to Help!</h2>
+            <p>Your peace of mind is important to us. If you have any questions or concerns about this Privacy Policy or our data practices, please don't hesitate to reach out.</p>
+           
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 C56 Wallpaper. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // A small script to log when the page is loaded, useful for debugging.
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('C56 Wallpaper Privacy Policy page loaded successfully!');
+            // You could add dynamic elements here if needed, but for a privacy policy, static is often best.
+        });
+    </script>
+</body>
+</html>
